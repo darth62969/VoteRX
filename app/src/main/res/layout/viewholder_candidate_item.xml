@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:background="@color/card_grey"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/candiate_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_avatar"
+                android:layout_margin="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <TextView
+                android:id="@+id/candidate_name_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_goneMarginTop="10dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintStart_toEndOf="@id/candiate_profile"
+                app:layout_constraintTop_toTopOf="@id/candiate_profile"
+                android:text="Name: "
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/candidate_name_tag"
+                app:layout_constraintTop_toTopOf="@id/candidate_name_tag"
+                android:maxLines="2"
+                android:lineBreakStyle="normal"
+                android:text="Candidate McCandidate"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/candidate_party_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_goneMarginTop="10dp"
+                app:layout_constraintStart_toStartOf="@id/candidate_name_tag"
+                app:layout_constraintTop_toBottomOf="@id/candidate_name_tag"
+                android:text="Party: "
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/candidate_party_tag"
+                app:layout_constraintTop_toTopOf="@id/candidate_party_tag"
+                android:text="Libertarian Party"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/candidate_age_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_goneMarginTop="10dp"
+                app:layout_constraintStart_toStartOf="@id/candidate_party_tag"
+                app:layout_constraintTop_toBottomOf="@id/candidate_party_tag"
+                android:text="Agr: "
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/candidate_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/candidate_age_tag"
+                app:layout_constraintTop_toTopOf="@id/candidate_age_tag"
+                android:text="247"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/candidate_dob_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_goneMarginTop="10dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintStart_toEndOf="@id/candidate_age"
+                app:layout_constraintTop_toBottomOf="@id/candidate_party_tag"
+                android:text="DoB: "
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/candidate_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/candidate_dob_tag"
+                app:layout_constraintTop_toTopOf="@id/candidate_dob_tag"
+                android:text="July 4th, 1776"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

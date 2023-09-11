@@ -1,0 +1,13 @@
+package com.BeyondTheWired.voterx.util
+
+object NavigationConstants {
+    const val USER_SETTINGS = "USER_SETTING"
+    const val BALLOT_INFORMATION = "BALLOT_INFORMATION"
+    const val RESEARCH_CANDIDATES = "RESEARCH_CANDIDATES"
+    const val VOTER_INFORMATION = "VOTER_INFORMATION"
+    const val PROFILE_INFORMATION = "PROFILE_INFORMATION"
+    const val CANDIDATE_INFORMATION = "CANDIDATE_INFORMATION"
+    const val VIEW_SOURCE = "VIEW_SOURCE"
+    const val OFFICE_INFORMATION = "OFFICE_INFORMATION"
+
+}
